@@ -25,10 +25,10 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon>mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}</v-icon>
-      </v-btn>
+      </v-btn> -->
       <!-- <v-btn icon @click.stop="clipped = !clipped">
         <v-icon>mdi-application</v-icon>
       </v-btn> -->
@@ -62,7 +62,8 @@
       </v-list>
     </v-navigation-drawer>
     <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <v-icon color="primary" @click="setTheme">mdi-weather-night</v-icon>
+      <!-- <span>&copy; {{ new Date().getFullYear() }} </span> -->
     </v-footer>
   </v-app>
 </template>
@@ -102,6 +103,12 @@ export default {
       rightDrawer: false,
       title: "Instant Order",
     };
+  },
+
+  methods: {
+    setTheme() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+    },
   },
 };
 </script>

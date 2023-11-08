@@ -16,14 +16,14 @@ export default {
           name: "Chicken Samosa",
           description: "Description for Product 3",
           price: 5,
-          imageUrl: "chicken-samosa.jpg",
+          image_url: "chicken-samosa.jpg",
         },
         {
           id: 6,
           name: "Alu Samosa",
           description: "Description for Product 3",
           price: 5,
-          imageUrl: "alu-samosa.jpg",
+          image_url: "alu-samosa.jpg",
         },
         // Add more product data here
       ],

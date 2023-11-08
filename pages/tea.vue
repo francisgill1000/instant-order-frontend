@@ -16,14 +16,14 @@ export default {
           name: "Kadak Tea",
           description: "Description for Product 1",
           price: 1,
-          imageUrl: "tea.jpeg",
+          image_url: "tea.jpeg",
         },
         {
           id: 2,
           name: "Milk Tea",
           description: "Description for Product 2",
           price: 2,
-          imageUrl: "milk-tea.jpg",
+          image_url: "milk-tea.jpg",
         },
       ],
     };

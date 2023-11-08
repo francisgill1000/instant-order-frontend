@@ -3,7 +3,7 @@
     <v-col v-for="product in products" :key="product.id" cols="12" md="4">
       <v-card>
         <v-img
-          :src="product.imageUrl"
+          :src="product.image_url"
           class="mx-auto"
           max-height="350"
           max-width="350"

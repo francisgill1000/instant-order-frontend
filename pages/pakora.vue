@@ -16,7 +16,7 @@ export default {
           name: "Pakora",
           description: "Description for Product 3",
           price: 5,
-          imageUrl: "pakora.jpg",
+          image_url: "pakora.jpg",
         },
       ],
     };
